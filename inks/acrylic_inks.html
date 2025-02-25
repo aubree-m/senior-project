@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>pagetitle</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    padding: 80px; /* some padding */
+    text-align: center; /* center the text */
+    background: #1abc9c; /* green background */
+    color: white; /* white text */
+    position: relative;
+}
+.header h1 {
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke: 2px white; /* white border */
+    position: relative;
+    z-index: 1;
+}
+.header h1::before {
+    content: 'acrylic_inks';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #1abc9c; /* same as background color */
+    z-index: -1;
+    clip-path: inset(0 0 0 0);
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333; /* dark background color */
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white; /* white text */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.navbar a.right {
+    float: right;
+}
+.navbar a:hover {
+    background-color: #ddd; /* light background color on hover */
+    color: black; /* black text on hover */
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column {
+    flex: 50%;
+    padding: 0 4px;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<h1></h1>
+
+  
+</div>
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">inks</a>
+    <a href="#">materials</a>
+    <a href="#" class="right">macheriny</a>
+</div>
+<div class="column">
+    <img src="wedding.jpg">
+    <img src="rocks.jpg">
+    <img src="falls2.jpg">
+    <img src="paris.jpg">
+    <img src="nature.jpg">
+    <img src="mist.jpg">
+    <img src="paris.jpg">
+</div>
+<h1 style="font-size:8vw;">acrylic_inks</h1>
+<p style="font-size:8vw;">acrylic_inks</p>
+<div class="row">
+    <div class="column" onclick="openTab('b1');" style="background:green;">Box 1</div>
+    <div class="column" onclick="openTab('b2');" style="background:blue;">Box 2</div>
+    <div class="column" onclick="openTab('b3');" style="background:red;">Box 3</div>
+</div>
+<div id="b1" class="containerTab" style="display:none;background:green">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2>Box 1</h2>
+    <p>Lorem ipsum..</p>
+</div>
+<div id="b2" class="containerTab" style="display:none;background:blue">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2>Box 2</h2>
+    <p>Lorem ipsum..</p>
+</div>
+<div id="b3" class="containerTab" style="display:none;background:red">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2>Box 3</h2>
+    <p>Lorem ipsum..</p>
+</div>
+<script>
+// Hide all elements with class="containerTab", except for the one that matches the clickable grid column
+function openTab(tabName) {
+    var i, x;
+    x = document.getElementsByClassName("containerTab");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+}
+</script>
+</body>
+</html>

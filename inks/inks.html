@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inks</title>
+    <style>
+
+    .header{
+        padding: 60px; /*some padding*/
+        text-align: center; /*center the text*/
+        background: #1abc9c; /*green background*/
+        color: white; /*white text color*/
+    }
+
+    /*incrase the font size of  the <h1>element*/
+        .header h1{
+            font-size:40px;
+        }
+
+    /* Top Navigation Styles */
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    .topnav a {
+      float: left;
+      color: orange;
+      text-align: center;
+      text-decoration: none;
+      font-size: 17px;
+      padding: 14px 16px; /* added for spacing */
+    }
+    .topnav a:hover {
+      background-color: orange;
+      color: #333;
+    }
+    .topnav a.active {
+      background-color: orange;
+      color: #333;
+    }
+    
+    /* Container for the image with text overlay */
+    .container {
+      position: relative;
+      width: 50%;
+      max-width: 300px;
+      margin: 20px auto; /* center the container */
+    }
+    .container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .text-block {
+      position: absolute;
+      bottom: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px 20px;
+    }
+    
+    /* Row and Column Layout */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .column {
+      flex: 1;
+      padding: 10px;
+      min-width: 100px;
+    }
+</style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <h1>inks</h1>
+    <p> a website created by me.</p>
+  </div>
+  <!-- Top Navigation -->
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#inks">Inks</a>
+    <a href="#materials">Materials</a>
+    <a href="#printing-press">Printing Press</a>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="card">...</div>
+    </div>
+    <div class="column">
+      <div class="card">..</div>
+    </div>
+    <div class="column">
+      <div class="card">...</div>
+    </div>
+    <div class="column">
+      <div class="card">..</div>
+    </div>
+  </div>
+</div>
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: arial, helvetica, sans-serif;
+}
+
+/* float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+/* remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 -5px;
+}
+/* clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+/* responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+</style>
+<!-- the grid: three columns-->
+ <div class="row">
+    <div class="column"     onclick="opentab('b1')" style="background: green;">box1</div>
+    <div class="column"     onclick="opentab('b2')" style="background:blue;">box2</div>
+    <div class="column"      onclick="opentab('b3')" style="background: yellow;">box3</div>
+    </div>
+    <!-- the expanding grid(hidden by default)-->
+    
+<span onclick="this.parentELement.style.display='none'" class="closebtn">x</span>
+   <h2>box1</h2>
+   <p></p>
+</div>
+<div id="b2" class="container tab" style="display:none;background:blue;">
+<span onclick=" this.parentELement.style.display='none'" class="closebtn">x</span>
+<h2>box2</h2>
+<p></p>
+</div>
+<div id="b3" class="container tab" style="display:none;background:red;">
+    <span onclick="this.parentELement.style.display='none'" class"closebtn">x</span>
+    <h2>box3</h2>
+    <p></p>
+</div>
+<style>
+/* the grid: three equal columns that float next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.container-tab {
+    padding: 20px;
+    color: white;
+}
+
+/* clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* closable button inside the image */
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* hide all elements with class="container-tab", except for the one that matches the clickable grid column */
+</style>
+<script>
+function opentab(tabname) {
+    var i, x;
+    x = document.getElementsByClassName("container-tab");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    document.getElementById(tabname).style.display = "block";
+}
+</script>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+    .header {
+        padding: 80px; /* some padding */
+        text-align: center; /* center the text */
+        background: #1abc9c; /* green background */
+        color: white; /* white text color */
+    }
+    
+    /* Increase the font size of the <h1> element */
+    .header h1 {
+        font-size: 40px;
+    }
+</style>
+<style>
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>uvcured Inks</h1>
+    
+</div>
+
+<div class="navbar">
+        <a href="#">home</a>
+        <a href="#">Inks</a>
+        <a href="#">materials</a>
+        <a href="#">machinery</a>
+</div>
+
+<style>
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden; /* Hide overflow */
+    background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+}
+</style>
+<div class="row">
+    <div class="side">...</div>
+    <div class="main">...</div>
+</div>
+<style>
+  /* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+}
+</style>
+<!-- The grid: three columns -->
+<div class="row">
+    <div class="column" onclick="openTab('b1');" style="background:green;">Box 1</div>
+    <div class="column" onclick="openTab('b2');" style="background:blue;">Box 2</div>
+    <div class="column" onclick="openTab('b3');" style="background:red;">Box 3</div>
+  </div>
+  
+  <!-- The expanding grid (hidden by default) -->
+  <div id="b1" class="containerTab" style="display:none;background:green">
+    <!-- If you want the ability to close the container, add a close button -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2>Box 1</h2>
+    <p>Lorem ipsum..</p>
+  </div>
+  
+  <div id="b2" class="containerTab" style="display:none;background:blue">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2>Box 2</h2>
+    <p>Lorem ipsum..</p>
+  </div>
+  
+  <div id="b3" class="containerTab" style="display:none;background:red">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2>Box 3</h2>
+    <p>Lorem ipsum..</p>
+  </div>
+<style>
+  /* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</body>
+</html>
