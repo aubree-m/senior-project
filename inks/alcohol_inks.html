@@ -3,59 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .navbar {
-            overflow: hidden;
-            background-color: #333;
-        }
-
-        .navbar a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .header {
-            position: relative;
-            text-align: center;
-            padding: 50px;
-            background-color: #f1f1f1;
-        }
-
-        .header::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 200px;
-            height: 100px;
-            background-color: white;
-            transform: translate(-50%, -50%);
-            z-index: 1;
-        }
-
-        .header h1, .header p {
-            position: relative;
-            z-index: 2;
-        }
-
-        .main {
-            padding: 16px;
-        }
-
-        .image-gallery img {
-            margin-bottom: 10px;
-        }
-    </style>
+    <title>Inks</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/inks.css">
 </head>
 <body>
 
@@ -63,19 +15,25 @@
         <h1> Alcohol Inks</h1>
     </div>
 
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+    <!-- Top Navigation -->
+    <div class="topnav">
+        <a href="../index.html">Home</a>
+        <a class="active" href="./inks.html">Inks</a>
+        <a href="../materials/materials.html">Materials</a>
+        <a href="../printing_press/printing_press.html">Printing Press</a>
     </div>
 
-    <div class="main">
-        <p>Main content...</p>
-        <!-- Add more content to make the page scrollable -->
-<p>Contains no acids or chemicals.</p>
-<p>Dries quickly and is permanent.</p>
-<p>Alcohol inks are dye-based and transparent.</p>
-<p>Ink evaporates quickly.</p>
-<p>Alcohol inks are toxic because the alcohol vapor can enter your respiratory tract.</p>
 https://www.google.com/imgres?q=alcohol%20inks&imgurl=http%3A%2F%2Fletsresin.com%2Fcdn%2Fshop%2Ffiles%2FHigh-Concentrated-Alcohol-Ink-Set03.webp%3Fv%3D1739964653&imgrefurl=https%3A%2F%2Fletsresin.com%2Fproducts%2Fhigh-concentrated-alcohol-ink-set&docid=PP4Q24vGO8CdIM&tbnid=9oD8ECWRgTCvMM&vet=12ahUKEwjB2fbK4oSMAxViKVkFHVS8G-4QM3oECHkQAA..i&w=1000&h=1000&hcb=2&ved=2ahUKEwjB2fbK4oSMAxViKVkFHVS8G-4QM3oECHkQAA
+
+
+<div class="ink-grid">
+    <div class="ink-card">
+        <h2>Alcohol Inks</h2>
+        <ul>
+            <li>Contains no acids or chemicals.</li>
+            <li>Dries quickly and is permanent.</li>
+            <li>Alcohol inks are dye-based and transparent.</li>
+            <li>Ink evaporates quickly.</li>
+            <li>Alcohol inks are toxic because the alcohol vapor can enter your respiratory tract.</li>
+        </ul>
+    </div>

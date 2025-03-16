@@ -1,206 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inks</title>
-    <style>
-
-    .header{
-        padding: 60px; /*some padding*/
-        text-align: center; /*center the text*/
-        background: #1abc9c; /*green background*/
-        color: white; /*white text color*/
-    }
-
-    /*incrase the font size of  the <h1>element*/
-        .header h1{
-            font-size:40px;
-        }
-
-    /* Top Navigation Styles */
-    .topnav {
-      overflow: hidden;
-      background-color: #333;
-    }
-    .topnav a {
-      float: left;
-      color: orange;
-      text-align: center;
-      text-decoration: none;
-      font-size: 17px;
-      padding: 14px 16px; /* added for spacing */
-    }
-    .topnav a:hover {
-      background-color: orange;
-      color: #333;
-    }
-    .topnav a.active {
-      background-color: orange;
-      color: #333;
-    }
-    
-    /* Container for the image with text overlay */
-    .container {
-      position: relative;
-      width: 50%;
-      max-width: 300px;
-      margin: 20px auto; /* center the container */
-    }
-    .container img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .text-block {
-      position: absolute;
-      bottom: 20px;
-      background-color: rgba(0, 0, 0, 0.7);
-      color: white;
-      padding: 10px 20px;
-    }
-    
-    /* Row and Column Layout */
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 20px 0;
-    }
-    .column {
-      flex: 1;
-      padding: 10px;
-      min-width: 100px;
-    }
-</style>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/inks.css">
 </head>
 <body>
-  <!-- Header -->
-  <div class="header">
-    <h1>INKS</h1>
-  </div>
-  <!-- Top Navigation -->
-  <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#inks">Inks</a>
-    <a href="#materials">Materials</a>
-    <a href="#printing-press">Printing Press</a>
-  </div>
-  <div class="row">
-    <div class="column">
-      <div class="card">...</div>
+    <!-- Header -->
+    <div class="header">
+        <h1>INKS</h1>
     </div>
-    <div class="column">
-      <div class="card">..</div>
+
+    <!-- Top Navigation -->
+    <div class="topnav">
+        <a href="../index.html">Home</a>
+        <a class="active" href="./inks.html">Inks</a>
+        <a href="../materials/materials.html">Materials</a>
+        <a href="../printing_press/printing_press.html">Printing Press</a>
     </div>
-    <div class="column">
-      <div class="card">...</div>
+
+    <!-- Ink Types Grid -->
+    <div class="ink-grid">
+        <div class="ink-card">
+            <h2>Water Based Inks</h2>
+            <p>Environmentally friendly inks that use water as a base.</p>
+            <a href="./water_basedinks.html">Learn More</a>
+        </div>
+        <div class="ink-card">
+            <h2>UV Cured Inks</h2>
+            <p>Modern inks that cure instantly under UV light.</p>
+            <a href="./uv_cured_inks.html">Learn More</a>
+        </div>
+        <div class="ink-card">
+            <h2>Solvent Inks</h2>
+            <p>Traditional inks using solvent-based formulas.</p>
+            <a href="./solvent_inks.html">Learn More</a>
+        </div>
+        <div class="ink-card">
+            <h2>Alcohol Inks</h2>
+            <p>Vibrant inks using alcohol as a carrier.</p>
+            <a href="./alcohol_inks.html">Learn More</a>
+        </div>
+        <div class="ink-card">
+            <h2>Metallic Inks</h2>
+            <p>Specialty inks with metallic pigments.</p>
+            <a href="./metallic_inks.html">Learn More</a>
+        </div>
+        <div class="ink-card">
+            <h2>Acrylic Inks</h2>
+            <p>Versatile inks with acrylic-based formulas.</p>
+            <a href="./acrylic_inks.html">Learn More</a>
+        </div>
     </div>
-    <div class="column">
-      <div class="card">..</div>
+
+    <!-- Information Tabs -->
+    <div class="tab-container">
+        <div class="tab-button" onclick="openTab('environmental-impact')" style="background: green;">Environmental Impact</div>
+        <div class="tab-button" onclick="openTab('health-concerns')" style="background: blue;">Health Concerns</div>
+        <div class="tab-button" onclick="openTab('solutions')" style="background: #1abc9c;">Solutions</div>
     </div>
-  </div>
-</div>
-<style>
-* {
-    box-sizing: border-box;
-}
-body {
-    font-family: arial, helvetica, sans-serif;
-}
 
-/* float four columns side by side */
-.column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-}
-/* remove extra left and right margins, due to padding in columns */
-.row {
-    margin: 0 -5px;
-}
-/* clear floats after the columns */
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* style the counter cards */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-}
-/* responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
-}
-</style>
-<!-- the grid: three columns-->
- <div class="row">
-    <div class="column"     onclick="opentab('b1')" style="background: green;">box1</div>
-    <div class="column"     onclick="opentab('b2')" style="background:blue;">box2</div>
-    <div class="column"      onclick="opentab('b3')" style="background: yellow;">box3</div>
+    <div id="environmental-impact" class="tab-content">
+        <span class="closebtn" onclick="closeTab(this)">&times;</span>
+        <h2>Environmental Impact</h2>
+        <p>The way that traditional inks are made, they often use petroleum. This oil is really bad for the environment. The way that traditional inks are made using very harmful chemicals can cause a release of hazardous gasses. This can cause the people who are using it to have a hard time breathing.</p>
     </div>
-    <!-- the expanding grid(hidden by default)-->
-    
-<span onclick="this.parentELement.style.display='none'" class="closebtn">x</span>
-   <h2> Inks</h2>
-   <p>The way that traditional inks are made, they often use petroleum. This oil is really bad for the environment. The way that traditional inks are made using very harmful chemicals can cause a release of hazardous gasses.   This can cause the people who are using it to have a hard time breathing.</p>
-</div>
-<div id="b2" class="container tab" style="display:none;background:blue;">
-<span onclick=" this.parentELement.style.display='none'" class="closebtn">x</span>
-<h2>  The way that traditional inks are made using very harmful chemicals can cause a release of hazardous gasses.   This can cause the people who are using it to have a hard time breathing. The big printing companies and plants can create a lot of pollution to make the air dirty. “The reliance on fossil fuels for energy and the use of carbon-intensive materials contribute to the carbon footprint of printing. Reducing carbon emissions from printing activities is crucial in mitigating climate change.” Douglas McGregor, The Enterprise World ( July  17, 2023) The people who work and live near the printing factory including the plants and animals near the factory will be affected by the pollution. This problem started when the printing companies decided to use cheaper products and make production faster. </h2>h2>
-</div>
-<div id="b3" class="container tab" style="display:none;background:red;">
-    <span onclick="this.parentELement.style.display='none'" class"closebtn">x</span>
-    <h2>box3</h2>
-    <p>The pollution that is caused by the inks and materials can cause big environmental changes and climate problems. The consequence of printing companies still using harmful materials and chemicals in inks causes even more pollution to the world. This can also result in serious health issues for people and animals.</p>
-</div>
-<style>
-/* the grid: three equal columns that float next to each other */
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 50px;
-    text-align: center;
-    font-size: 25px;
-    cursor: pointer;
-    color: white;
-}
 
-.container-tab {
-    padding: 20px;
-    color: white;
-}
+    <div id="health-concerns" class="tab-content">
+        <span class="closebtn" onclick="closeTab(this)">&times;</span>
+        <h2>Health Concerns</h2>
+        <p>The way that traditional inks are made using very harmful chemicals can cause a release of hazardous gasses. This can cause the people who are using it to have a hard time breathing. The big printing companies and plants can create a lot of pollution to make the air dirty. "The reliance on fossil fuels for energy and the use of carbon-intensive materials contribute to the carbon footprint of printing. Reducing carbon emissions from printing activities is crucial in mitigating climate change." - Douglas McGregor, The Enterprise World (July 17, 2023)</p>
+    </div>
 
-/* clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+    <div id="solutions" class="tab-content">
+        <span class="closebtn" onclick="closeTab(this)">&times;</span>
+        <h2>Solutions</h2>
+        <p>The pollution that is caused by the inks and materials can cause big environmental changes and climate problems. The consequence of printing companies still using harmful materials and chemicals in inks causes even more pollution to the world. This can also result in serious health issues for people and animals.</p>
+    </div>
 
-/* closable button inside the image */
-.closebtn {
-    float: right;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-}
+    <script>
+        function openTab(tabId) {
+            // Hide all tab contents
+            const tabContents = document.getElementsByClassName('tab-content');
+            for (let content of tabContents) {
+                content.style.display = 'none';
+            }
+            // Show the selected tab
+            document.getElementById(tabId).style.display = 'block';
+        }
 
-/* hide all elements with class="container-tab", except for the one that matches the clickable grid column */
-</style>
-<script>
-function opentab(tabname) {
-    var i, x;
-    x = document.getElementsByClassName("container-tab");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    document.getElementById(tabname).style.display = "block";
-}
-</script>
+        function closeTab(element) {
+            element.parentElement.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

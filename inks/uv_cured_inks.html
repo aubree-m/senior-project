@@ -1,100 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Uvcured Inks</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.header {
-  padding: 80px; /* some padding */
-  text-align: center; /* center the text */
-  background: #1abc9c; /* green background */
-  color: white; /* white text color */
-}
-
-/* Increase the font size of the <h1> element */
-.header h1 {
-  font-size: 40px;
-}
-
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden; /* Hide overflow */
-  background-color: #333; /* Dark background color */
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: left; /* Make sure that the links stay side-by-side */
-  display: block; /* Change the display to block, for responsive reasons (see below) */
-  color: white; /* White text color */
-  text-align: center; /* Center the text */
-  padding: 14px 20px; /* Add some padding */
-  text-decoration: none; /* Remove underline */
-}
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right; /* Float a link to the right */
-}
-
-/* Change color on hover/mouse-over */
-.navbar a:hover {
-  background-color: #ddd; /* Grey background color */
-  color: black; /* Black text color */
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  padding: 10px;
-}
-
-.grid-item {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-  border: 1px solid #ccc;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the grid items stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UV Cured Inks</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/inks.css">
 </head>
 <body>
+    <div class="header">
+        <h1>UV Cured Inks</h1>
+    </div>
 
-<div class="header"></div>
-  <h1>Uvcured Inks</h1>
-</div>
+    <div class="topnav">
+        <a href="../index.html">Home</a>
+        <a href="./inks.html">Inks</a>
+        <a class="active" href="./uv_cured_inks.html">UV Cured Inks</a>
+        <a href="../materials/materials.html">Materials</a>
+        <a href="../printing_press/printing_press.html">Printing Press</a>
+    </div>
 
-<div class="navbar">
-  <a href="#">Home</a>
-  <a href="#">Inks</a>
-  <a href="#">Materials</a>
-  <a href="#">Printing Press</a>
-</div>
+    <div class="ink-grid">
+        <div class="ink-card">
+            <h2>What are UV Cured Inks?</h2>
+            <p>UV cured inks are modern printing inks that cure instantly when exposed to ultraviolet light. This technology offers rapid drying and excellent durability.</p>
+        </div>
 
-<div class="grid-container">
-  <div class="grid-item">
+        <div class="ink-card">
+            <h2>Key Benefits</h2>
+            <ul>
+                <li>Instant curing</li>
+                <li>Superior durability</li>
+                <li>Excellent color vibrancy</li>
+                <li>Reduced environmental impact</li>
+                <li>No solvent emissions</li>
+            </ul>
+        </div>
 
-
-
- UV-cured inks are specially made inks that are cured in a UV light. This can be used to help the inks faster. This can give the design more vibrant colors. UV inks are about 99 percent of VOC free. This causes UV-cured inks to be more friendly to the environment. The concerns with UV-cured inks have a lot of emissions of VOC which can cause air pollution and health issues for humans and animals. Uvcured inks  also use high energy consumption and cant discard the UV-cured ink cartridges right 
-</div>
-  <div class="grid-item">Item 2</div>
-  <div class="grid-item">Item 3</div>
-  <div class="grid-item">Item 4</div>
-</div>
-
+        <div class="ink-card">
+            <h2>Applications</h2>
+            <p>UV cured inks are widely used in commercial printing, packaging, and industrial applications where quick turnaround and durability are essential.</p>
+        </div>
+    </div>
 </body>
 </html>
 

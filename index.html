@@ -1,135 +1,14 @@
-<style>
-  .topnav {
-    background-color: #333; /* Add this line to set the background color */
-    overflow: hidden;
-  }
-  .topnav a {
-    float: left;
-    color: orange;
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-    padding: 14px 16px; /* added for spacing */
-  }
-  .topnav a:hover {
-    background-color: orange;
-    color: #333;
-  }
-  .topnav a.active {
-    background-color: orange;
-    color: #333;
-  }
-  
-  /* Container for the image with text overlay */
-  .container {
-    position: relative;
-    width: 50%;
-    max-width: 300px;
-    margin: 20px auto; /* center the container */
-  }
-  .container img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  .text-block {
-    position: absolute;
-    bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 10px 20px;
-  }
-  
-  /* Row and Column Layout */
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px 0;
-  }
-  .column {
-    flex: 1;
-    padding: 10px;
-    min-width: 100px;
-  }
-  
-  /* Header Styles */
-  .header {
-    padding: 60px;
-    text-align: center;
-    background: #1abc9c;
-    color: white;
-    font-size: 30px;
-  }
-  
-  /* button used to open the chat form - fixed at the bottom of the page */
-  .open-button {
-    background-color: #555;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    position: fixed;
-    bottom: 23px;
-    right: 28px;
-    z-index: 9;
-  }
-  
-  /* The popup chat - hidden by default */
-  .form-popup {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    right: 15px;
-    border: 3px solid #f1f1f1;
-    z-index: 9;
-  }
-  
-  /* add styles to the form container */
-  .form-container {
-    max-width: 300px;
-    padding: 10px;
-    background-color: white;
-  }
-  
-  /* full-width text area */
-  .form-container textarea {
-    width: 100%;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-    resize: none;
-    min-height: 200px;
-  }
-  
-  /* when the text area gets focus, do something */
-  .form-container textarea:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
-  /* set a style for the submit/login button */
-  .form-container .btn {
-    background-color: #04aa6d;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 10px;
-    opacity: 0.8;
-  }
-  
-  /* add a red background color to the cancel button */
-  .form-container .cancel {
-    background-color: red;
-  }
-  
-  /* add some hover effects to buttons */
-  .form-container .btn:hover, .open-button:hover {
-    opacity: 1;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Way to Print</title>
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/chat.css">
 </head>
 <body>
 <header-component></header-component>
@@ -139,10 +18,10 @@
 
 <!-- Top Navigation -->
 <div class="topnav">
-<a class="active" href="#home">Home</a>
-<a href="./inks.html">Inks</a>
+<a class="active" href="../index.html">Home</a>
+<a href="./inks/inks.html">Inks</a>
 <a href="./materials/materials.html">Materials</a>
-<a href="#printing-press">Printing Press</a>
+<a href="./printing_press/printing_press.html">Printing Press</a>
 </div>
 
 <!-- Container with Image and Text Overlay -->
@@ -152,8 +31,8 @@
 
 <!-- Row with Columns -->
 <div class="row">
-  <div class="column" style="background-color:#aaa;">
+  <div class="column column-gray">
     <h2>Hello my name is Aubree</h2>
-    <p>My website is about improving the way we print on clothing articles and other accessories.	Did you know that every year countless printing organizations use over 1 billion liters of harmful inks and materials that can hurt the world or us?  Axon. N.D “ Approximately 1.3 billion inkjet cartridges are used every year less than 30 percent of that number are recycled  Most inks that are traditionally made are from toxic materials that can release dangerous gasses.</p>
+    <p>My website is about improving the way we print on clothing articles and other accessories.	Did you know that every year countless printing organizations use over 1 billion liters of harmful inks and materials that can hurt the world or us?  Axon. N.D " Approximately 1.3 billion inkjet cartridges are used every year less than 30 percent of that number are recycled  Most inks that are traditionally made are from toxic materials that can release dangerous gasses.</p>
   </div>
 </div>

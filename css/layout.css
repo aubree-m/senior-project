@@ -1,0 +1,16 @@
+/* Layout Styles */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    min-width: 100px;
+}
+
+.column-gray {
+    background-color: #aaa;
+} 
