@@ -1,122 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inks</title>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/navigation.css">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/inks.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solvent-Based Inks</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/inks.css">
+  <link rel="stylesheet" href="../css/solvent_inks.css">
+  <script src="../js/solvent_inks.js" defer></script>
 </head>
+
 <body>
-
- <div class="header">
-        <h1> Alcohol Inks</h1>
-    </div>
-
-    <!-- Top Navigation -->
-    <div class="topnav">
-        <a href="../index.html">Home</a>
-        <a class="active" href="./inks.html">Inks</a>
-        <a href="../materials/materials.html">Materials</a>
-        <a href="../printing_press/printing_press.html">Printing Press</a>
-    </div>
-    <div class="column">
-      <img src="wedding.jpg">
-      <img src="rocks.jpg">
-      <img src="falls2.jpg">
-      <img src="paris.jpg">
-      <img src="nature.jpg">
-      <img src="mist.jpg">
-      <img src="paris.jpg">
-    </div>
-<h1 style="font-size:8vw;">solvent inks</h1>
-<p style="font-size:2vw;">Resize the browser window to see how the font size scales.</p>
-</body>
-</html>
-<!-- The grid: three columns -->
-<div class="row">
-    <div class="column" onclick="openTab('b1');" style="background:green;">Box 1</div>
-    <div class="column" onclick="openTab('b2');" style="background:blue;">Box 2</div>
-    <div class="column" onclick="openTab('b3');" style="background:red;">Box 3</div>
+  <div class="header">
+    <h1>Alcohol Inks</h1>
   </div>
-  
-  <!-- The expanding grid (hidden by default) -->
-  <div id="b1" class="containerTab" style="display:none;background:green">
-    <!-- If you want the ability to close the container, add a close button -->
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+
+  <!-- Top Navigation -->
+  <div class="topnav">
+    <a href="../index.html">Home</a>
+    <a class="active" href="./inks.html">Inks</a>
+    <a href="../materials/materials.html">Materials</a>
+    <a href="../printing_press/printing_press.html">Printing Press</a>
+  </div>
+
+  <h1 class="page-title">Solvent-Based Inks</h1>
+
+  <!-- Container with Image -->
+  <div class="ink-container">
+    <img src="../assets/solvent-inks.png" alt="Solvent-Based Inks" style="width: 25vw;">
+  </div>
+
+  <!-- The grid: three columns -->
+  <div class="row">
+    <div class="column green-bg" onclick="openTab('b1');">
+      <p>Solvent inks use pigments instead of dyes, and they are made with oil and alcohol. When handling these inks and
+        disposing of them, we must be careful because they release harmful compounds known as volatile organic compounds
+        (VOCs). These compounds can adversely affect the environment and contribute to pollution. The printing process
+        that uses solvent inks emits gases and involves chemicals that pose serious health risks to both people and
+        animals.
+        Exposure to solvent-based inks can cause skin and eye irritation, as well as other respiratory. We can reduce
+        the environmental impact of hazardous materials. It is important to have a good system to dispose of the inks.
+        To make sure not only you and other people get hurt but also our environment and animals.</p>
+    </div>
+    <div class="column blue-bg" onclick="openTab('b2');">
+      <p>solvents can causes air pollution and green houses gases </p>
+    </div>
+    <div class="column red-bg" onclick="openTab('b3');">Box 3</div>
+  </div>
+
+  <!-- The expanding grid containers (hidden by default) -->
+  <div id="b1" class="containerTab green-bg">
+    <!-- Close button -->
+    <span class="closebtn">x</span>
     <h2>Box 1</h2>
-    <p>Solvent inks use pigments instead of dyes, and they are made with oil and alcohol. When handling these inks and disposing of them, we must be careful because they release harmful compounds known as volatile organic compounds (VOCs). These compounds can adversely affect the environment and contribute to pollution. The printing process that uses solvent inks emits gases and involves chemicals that pose serious health risks to both people and animals. Exposure to solvent-based inks can cause skin and eye irritation, as well as other respiratory. We can reduce the environmental impact of hazardous materials. It is important to have a good system to dispose of the inks. To make sure not only you and other people get hurt but also our environment and animals. 
-.</p>
   </div>
-  
-  <div id="b2" class="containerTab" style="display:none;background:blue">
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+
+  <div id="b2" class="containerTab blue-bg">
+    <span class="closebtn">x</span>
     <h2>Box 2</h2>
-    <p>solvents can causes air pollution and green houses gases </p>
   </div>
-  
-  <div id="b3" class="containerTab" style="display:none;background:red">
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+
+  <div id="b3" class="containerTab red-bg">
+    <span class="closebtn">x</span>
     <h2>Box 3</h2>
-    <p>data:image/jpeg;base64,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</p>
   </div>
 </body>
+
 </html>
-<style>
-  div.example {
-    font-size: 80px;
-  }
-
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  div.example {
-    font-size: 30px;
-  }
-}
-</style>
-<style>
-/* The grid: Three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 50px;
-  text-align: center;
-  font-size: 25px;
-  cursor: pointer;
-  color: white;
-}
-
-.containerTab {
-  padding: 20px;
-  color: white;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Closable button inside the image */
-.closebtn {
-  float: right;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
-</style>
-<script>
-// Hide all elements with class="containerTab", except for the one that matches the clickable grid column
-function openTab(tabName) {
-  var i, x;
-  x = document.getElementsByClassName("containerTab");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  document.getElementById(tabName).style.display = "block";
-}
-</script>

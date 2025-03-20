@@ -1,0 +1,74 @@
+/* Solvent Inks Page Specific Styles */
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.containerTab {
+    padding: 20px;
+    color: white;
+    display: none;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Closable button inside the container */
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* Main container for ink images */
+.ink-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ink-container img {
+    width: 50vw;
+}
+
+/* Page title styling */
+.page-title {
+    font-size: 8vw;
+    text-align: center;
+}
+
+/* Background colors */
+.green-bg {
+    background-color: green;
+}
+
+.blue-bg {
+    background-color: blue;
+}
+
+.red-bg {
+    background-color: red;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        float: none;
+    }
+
+    .ink-container img {
+        width: 90vw;
+    }
+}
