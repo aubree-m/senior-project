@@ -1,122 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inks</title>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/navigation.css">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/inks.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solvent-Based Inks</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/inks.css">
+  <link rel="stylesheet" href="../css/solvent_inks.css">
+  <script src="../js/solvent_inks.js" defer></script>
 </head>
+
 <body>
-
- <div class="header">
-        <h1> Alcohol Inks</h1>
-    </div>
-
-    <!-- Top Navigation -->
-    <div class="topnav">
-        <a href="../index.html">Home</a>
-        <a class="active" href="./inks.html">Inks</a>
-        <a href="../materials/materials.html">Materials</a>
-        <a href="../printing_press/printing_press.html">Printing Press</a>
-    </div>
-    <div class="column">
-      <img src="wedding.jpg">
-      <img src="rocks.jpg">
-      <img src="falls2.jpg">
-      <img src="paris.jpg">
-      <img src="nature.jpg">
-      <img src="mist.jpg">
-      <img src="paris.jpg">
-    </div>
-<h1 style="font-size:8vw;">solvent inks</h1>
-<p style="font-size:2vw;">Resize the browser window to see how the font size scales.</p>
-</body>
-</html>
-<!-- The grid: three columns -->
-<div class="row">
-    <div class="column" onclick="openTab('b1');" style="background:green;">Box 1</div>
-    <div class="column" onclick="openTab('b2');" style="background:blue;">Box 2</div>
-    <div class="column" onclick="openTab('b3');" style="background:red;">Box 3</div>
+  <div class="header">
+    <h1>Alcohol Inks</h1>
   </div>
-  
-  <!-- The expanding grid (hidden by default) -->
-  <div id="b1" class="containerTab" style="display:none;background:green">
-    <!-- If you want the ability to close the container, add a close button -->
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+
+  <!-- Top Navigation -->
+  <div class="topnav">
+    <a href="../index.html">Home</a>
+    <a class="active" href="./inks.html">Inks</a>
+    <a href="../materials/materials.html">Materials</a>
+    <a href="../printing_press/printing_press.html">Printing Press</a>
+  </div>
+
+  <h1 class="page-title">Solvent-Based Inks</h1>
+
+  <!-- Container with Image -->
+  <div class="ink-container">
+    <img src="../assets/solvent-inks.png" alt="Solvent-Based Inks" style="width: 25vw;">
+  </div>
+
+  <!-- The grid: three columns -->
+  <div class="row">
+    <div class="column green-bg" onclick="openTab('b1');">
+      <p>Solvent inks use pigments instead of dyes, and they are made with oil and alcohol. When handling these inks and
+        disposing of them, we must be careful because they release harmful compounds known as volatile organic compounds
+        (VOCs). These compounds can adversely affect the environment and contribute to pollution. The printing process
+        that uses solvent inks emits gases and involves chemicals that pose serious health risks to both people and
+        animals.
+        Exposure to solvent-based inks can cause skin and eye irritation, as well as other respiratory. We can reduce
+        the environmental impact of hazardous materials. It is important to have a good system to dispose of the inks.
+        To make sure not only you and other people get hurt but also our environment and animals.</p>
+    </div>
+    <div class="column blue-bg" onclick="openTab('b2');">
+      <p>solvents can causes air pollution and green houses gases </p>
+    </div>
+    <div class="column red-bg" onclick="openTab('b3');">Box 3</div>
+  </div>
+
+  <!-- The expanding grid containers (hidden by default) -->
+  <div id="b1" class="containerTab green-bg">
+    <!-- Close button -->
+    <span class="closebtn">x</span>
     <h2>Box 1</h2>
-    <p>Solvent inks use pigments instead of dyes, and they are made with oil and alcohol. When handling these inks and disposing of them, we must be careful because they release harmful compounds known as volatile organic compounds (VOCs). These compounds can adversely affect the environment and contribute to pollution. The printing process that uses solvent inks emits gases and involves chemicals that pose serious health risks to both people and animals. Exposure to solvent-based inks can cause skin and eye irritation, as well as other respiratory. We can reduce the environmental impact of hazardous materials. It is important to have a good system to dispose of the inks. To make sure not only you and other people get hurt but also our environment and animals. 
-.</p>
   </div>
-  
-  <div id="b2" class="containerTab" style="display:none;background:blue">
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+
+  <div id="b2" class="containerTab blue-bg">
+    <span class="closebtn">x</span>
     <h2>Box 2</h2>
-    <p>Lorem ipsum..</p>
   </div>
-  
-  <div id="b3" class="containerTab" style="display:none;background:red">
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+
+  <div id="b3" class="containerTab red-bg">
+    <span class="closebtn">x</span>
     <h2>Box 3</h2>
-    <p>Lorem ipsum..</p>
   </div>
 </body>
+
 </html>
-<style>
-  div.example {
-    font-size: 80px;
-  }
-
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  div.example {
-    font-size: 30px;
-  }
-}
-</style>
-<style>
-/* The grid: Three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 50px;
-  text-align: center;
-  font-size: 25px;
-  cursor: pointer;
-  color: white;
-}
-
-.containerTab {
-  padding: 20px;
-  color: white;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Closable button inside the image */
-.closebtn {
-  float: right;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
-</style>
-<script>
-// Hide all elements with class="containerTab", except for the one that matches the clickable grid column
-function openTab(tabName) {
-  var i, x;
-  x = document.getElementsByClassName("containerTab");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  document.getElementById(tabName).style.display = "block";
-}
-</script>
